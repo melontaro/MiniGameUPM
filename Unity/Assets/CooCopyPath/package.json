@@ -1,0 +1,21 @@
+{
+    "name": "com.coocoogame.coocopypath",
+    "version": "1.0.2",
+    "displayName": "CooCopyPath",
+    "description": "This is an coocopypath Extension package",
+    "unity": "2019.1",
+    "unityRelease": "0b5",
+    "documentationUrl": "http://coocoogame.com/",
+    "changelogUrl": "http://coocoogame.com/",
+    "licensesUrl": "http://coocoogame.com/licensing.html",
+   "keywords": [
+      "copy",
+      "path",
+      "copypath"
+    ],
+    "author": {
+      "name": "coocoogame",
+      "email": "axuyin@gmail.com",
+      "url": "http://coocoogame.com/"
+    }
+  }
