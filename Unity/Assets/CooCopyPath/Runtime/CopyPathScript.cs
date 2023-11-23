@@ -122,7 +122,7 @@ public class CopyPathScript : MonoBehaviour
             GetPath(Selection.gameObjects[0].transform, ref pathStr);
         
             TextEditor te = new TextEditor();
-            te.text = string.Format("this.transform.find({0});", pathStr);
+            te.text = string.Format("this.transform.find(\"{0}\");", pathStr);
             te.SelectAll();
             te.Copy();
         }
