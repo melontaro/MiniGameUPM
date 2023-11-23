@@ -15,14 +15,14 @@ public class TilemapInspector : Editor
     {
         tilemapBehaviour = (TilemapBehaviour)target;
         base.OnInspectorGUI();
-        if (GUILayout.Button("µ¼³öµØÍ¼"))
+        if (GUILayout.Button("å¯¼å‡ºåœ°å›¾"))
         {
             ExportMap();
         }
 
-        if (GUILayout.Button("Çå³ıµØÍ¼"))
+        if (GUILayout.Button("æ¸…é™¤åœ°å›¾"))
         {
-            if (EditorUtility.DisplayDialog("ÌáÊ¾", "È·¶¨ÒªÇå³ıµØÍ¼Âğ£¿", "È·¶¨", "È¡Ïû"))
+            if (EditorUtility.DisplayDialog("æç¤º", "ç¡®å®šè¦æ¸…é™¤åœ°å›¾å—ï¼Ÿ", "ç¡®å®š", "å–æ¶ˆ"))
                 ClearMap();
         }
     }
@@ -32,7 +32,7 @@ public class TilemapInspector : Editor
     {
         TileBase[] tileArray = tilemapBehaviour.Tilemap.GetTilesBlock(tilemapBehaviour.area);
 
-        Debug.Log(string.Format("Tilemap£º{0} ×¼±¸µ¼³öµØÍ¼Êı¾İ", tilemapBehaviour.Tilemap.name));
+        Debug.Log(string.Format("Tilemapï¼š{0} å‡†å¤‡å¯¼å‡ºåœ°å›¾æ•°æ®", tilemapBehaviour.Tilemap.name));
 
         int tilecount = 0;
 
@@ -47,7 +47,7 @@ public class TilemapInspector : Editor
                 if (tilemapBehaviour.Tilemap.GetTile(tempVec) == null)
                     continue;
 
-                Debug.Log(string.Format("Î»ÖÃ£º{0} Tile£º{1}", tempVec.ToString(), tilemapBehaviour.Tilemap.GetTile(tempVec).ToString()));
+                Debug.Log(string.Format("ä½ç½®ï¼š{0} Tileï¼š{1}", tempVec.ToString(), tilemapBehaviour.Tilemap.GetTile(tempVec).ToString()));
 
                 data.Add(i + "_" + j, tilemapBehaviour.Tilemap.GetTile(tempVec).name);
 
@@ -59,21 +59,21 @@ public class TilemapInspector : Editor
 
         ExportMap(jsonData, tilemapBehaviour.Tilemap.name);
 
-        Debug.Log(string.Format("Tilemap£º{0} ×Ü¹²TileÊıÁ¿£º{1}", tilemapBehaviour.Tilemap.name, tilecount.ToString()));
+        Debug.Log(string.Format("Tilemapï¼š{0} æ€»å…±Tileæ•°é‡ï¼š{1}", tilemapBehaviour.Tilemap.name, tilecount.ToString()));
 
     }
 
 
     public void ExportMap(string data, string mapName)
     {
-        string fullPath = EditorUtility.SaveFilePanel("±£´æµØÍ¼ÎÄ¼ş", Application.dataPath, mapName, "json");
+        string fullPath = EditorUtility.SaveFilePanel("ä¿å­˜åœ°å›¾æ–‡ä»¶", Application.dataPath, mapName, "json");
         if (string.IsNullOrEmpty(fullPath))
             return;
 
         TextWriter tw = new StreamWriter(fullPath, false);
         tw.Write(data);
         tw.Close();
-        Debug.Log("µ¼³öµØÍ¼Íê³É path:" + fullPath);
+        Debug.Log("å¯¼å‡ºåœ°å›¾å®Œæˆ path:" + fullPath);
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
     }
@@ -82,4 +82,7 @@ public class TilemapInspector : Editor
     {
         tilemapBehaviour.Tilemap.ClearAllTiles();
     }
+        
+          
+       
 }

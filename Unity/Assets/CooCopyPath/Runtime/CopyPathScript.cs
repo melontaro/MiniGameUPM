@@ -17,7 +17,7 @@ public class CopyPathScript : MonoBehaviour
         {
             string pathStr = string.Empty;
             GetPath(Selection.gameObjects[0].transform, ref pathStr);
-
+        
             TextEditor te = new TextEditor();
             te.text = pathStr;
             te.SelectAll();
@@ -109,6 +109,25 @@ public class CopyPathScript : MonoBehaviour
         else
         {
             Debug.ClearDeveloperConsole();
+            Debug.LogError("请只选择一个物体进行复制路径;");
+        }
+    }
+    
+    [MenuItem("GameObject/CopyPath/ThisCopyFullPath", false, 0)]
+    static void ThisCopyFullPath()
+    {
+        if (Selection.gameObjects != null && Selection.gameObjects.Length == 1)
+        {
+            string pathStr = string.Empty;
+            GetPath(Selection.gameObjects[0].transform, ref pathStr);
+        
+            TextEditor te = new TextEditor();
+            te.text = string.Format("this.transform.find({0});", pathStr);
+            te.SelectAll();
+            te.Copy();
+        }
+        else
+        {
             Debug.LogError("请只选择一个物体进行复制路径;");
         }
     }
