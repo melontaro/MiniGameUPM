@@ -1,13 +1,14 @@
 using UnityEngine;
 using UnityEditor;
 using System.Collections.Generic;
-#if Lean
-using Lean.Gui;
-#endif
 
 using System.IO;
 
-public class CopyPathScript : Editor
+namespace Coo.Editor
+{
+    
+
+public class CopyPathScript : UnityEditor.Editor
 {
     [MenuItem("Tools/解析AssetBundle", false, 0)]
     static void InitFullPath()
@@ -48,4 +49,4 @@ class BundleData
 {
     public string name;
     public string nameWithMd5;
-}
+}}
