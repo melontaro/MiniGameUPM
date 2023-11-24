@@ -7,7 +7,7 @@ using Lean.Gui;
 
 using System.IO;
 
-public class CopyPathScript : MonoBehaviour
+public class CopyPathScript : Editor
 {
     [MenuItem("Tools/解析AssetBundle", false, 0)]
     static void InitFullPath()
