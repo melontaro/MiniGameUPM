@@ -37,6 +37,10 @@ public class CustomRightClickMenu: MonoBehaviour
         foreach (string dependency in dependencies)
         {
             if (dependency.EndsWith(".cs"))continue;
+            if (dependency.EndsWith(".shader"))continue; if (dependency.EndsWith(".asset"))continue;
+            if (dependency.EndsWith(".psd"))continue;            if (dependency.EndsWith(".ttf"))continue;
+            if (dependency.EndsWith(".cginc"))continue;
+
             // 检查资源路径是否为空
             if (!string.IsNullOrEmpty(dependency))
             {
