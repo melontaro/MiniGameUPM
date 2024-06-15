@@ -2,6 +2,7 @@ using System;
 using System.IO;
 using UnityEditor;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
 public class CustomRightClickMenu: MonoBehaviour
 {
@@ -10,7 +11,8 @@ public class CustomRightClickMenu: MonoBehaviour
     static void MyTestA()
     {
         var obj=    Selection.activeObject as GameObject;
-        GetResourcePaths(obj);
+       GetResourcePaths(obj);
+   
     }
 
     public static void GetResourcePaths(GameObject prefab)
@@ -53,12 +55,12 @@ public class CustomRightClickMenu: MonoBehaviour
                 // 复制资源文件到目标文件夹
              
                 
-                File.Copy(Path.Combine(oo,dependency),Path.Combine(oo,targetPath), true); // true表示如果目标文件已存在，则覆盖它
+                File.Move(Path.Combine(oo,dependency),Path.Combine(oo,targetPath)); // true表示如果目标文件已存在，则覆盖它
                 
                 
                 string oldfile=Path.Combine(oo,dependency+".meta");
                 string newfile=Path.Combine(oo,targetPath+".meta");
-                File.Copy(oldfile,newfile, true); // true表示如果目标文件已存在，则覆盖它
+                File.Move(oldfile,newfile); // true表示如果目标文件已存在，则覆盖它
                 Debug.Log($"复制资源: {dependency} 到 {targetPath}");
             }
         }
@@ -66,5 +68,10 @@ public class CustomRightClickMenu: MonoBehaviour
         AssetDatabase.Refresh();
     }
 
+  public  class PrefabData
+    {
+        public Component cmp;
+        public Object obj;
+    }
 
 }

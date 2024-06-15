@@ -1,6 +1,6 @@
 {
     "name": "com.coocoogame.organizeprefab",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "displayName": "OrganizePrefab",
     "description": "This is an Organize Prefab Extension package",
     "unity": "2019.1",
