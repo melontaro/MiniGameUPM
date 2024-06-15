@@ -8,3 +8,8 @@ https://github.com/melontaro/MiniGameUPM.git?path=Unity/Assets/CooCopyPath
 ``` C#
 https://github.com/melontaro/MiniGameUPM.git?path=Unity/Assets/AssetBundleTool
 ```
+
+##AssetBundle解析到Json文件:
+``` C#
+https://github.com/melontaro/MiniGameUPM.git?path=Unity/Assets/OrganizePrefab
+```
