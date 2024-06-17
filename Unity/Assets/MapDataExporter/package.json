@@ -1,0 +1,21 @@
+{
+    "name": "com.coocoogame.mapdataexporter",
+    "version": "1.0.0",
+    "displayName": "MapDataExporter",
+    "description": "导出地图数据到Excel",
+    "unity": "2019.1",
+    "unityRelease": "0b5",
+    "documentationUrl": "http://coocoogame.com/",
+    "changelogUrl": "http://coocoogame.com/",
+    "licensesUrl": "http://coocoogame.com/licensing.html",
+   "keywords": [
+      "Excel",
+      "Map",
+      "Export"
+    ],
+    "author": {
+      "name": "coocoogame",
+      "email": "axuyin@gmail.com",
+      "url": "http://coocoogame.com/"
+    }
+  }
