@@ -13,3 +13,7 @@ https://github.com/melontaro/MiniGameUPM.git?path=Unity/Assets/AssetBundleTool
 ``` C#
 https://github.com/melontaro/MiniGameUPM.git?path=Unity/Assets/OrganizePrefab
 ```
+##MapExport导出地图插件:
+``` C#
+https://github.com/melontaro/MiniGameUPM.git?path=Unity/Assets/MapDataExporter
+```
