@@ -1,6 +1,6 @@
 {
     "name": "com.coocoogame.mapdataexporter",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "displayName": "MapDataExporter",
     "description": "导出地图数据到Excel",
     "unity": "2019.1",
