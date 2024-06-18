@@ -9,7 +9,7 @@ https://github.com/melontaro/MiniGameUPM.git?path=Unity/Assets/CooCopyPath
 https://github.com/melontaro/MiniGameUPM.git?path=Unity/Assets/AssetBundleTool
 ```
 
-##AssetBundle解析到Json文件:
+##解析prefab到新文件夹,将资源引用复制过去:
 ``` C#
 https://github.com/melontaro/MiniGameUPM.git?path=Unity/Assets/OrganizePrefab
 ```
