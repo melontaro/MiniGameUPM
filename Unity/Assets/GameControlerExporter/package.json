@@ -1,7 +1,7 @@
 {
-    "name": "com.coocoogame.gamecontrolerexporter",
-    "version": "1.0.0",
-    "displayName": "GameControlerExporter",
+    "name": "com.coocoogame.mapdataexporter",
+    "version": "1.0.2",
+    "displayName": "MapDataExporter",
     "description": "导出地图数据到Excel",
     "unity": "2019.1",
     "unityRelease": "0b5",
@@ -10,7 +10,7 @@
     "licensesUrl": "http://coocoogame.com/licensing.html",
    "keywords": [
       "Excel",
-      "GameControler",
+      "Map",
       "Export"
     ],
     "author": {
