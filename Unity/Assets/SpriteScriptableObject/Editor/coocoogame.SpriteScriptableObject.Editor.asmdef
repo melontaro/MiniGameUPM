@@ -1,0 +1,18 @@
+{
+    "name": "coocoogame.SpriteScriptableObject.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:5450f348f195a5e4fba841b4adaa066b"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
