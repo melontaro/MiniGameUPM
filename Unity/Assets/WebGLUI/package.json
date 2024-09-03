@@ -1,0 +1,21 @@
+{
+    "name": "com.coocoogame.webglui",
+    "version": "1.0.0",
+    "displayName": "webglui",
+    "description": "This is an webgl Extension package",
+    "unity": "2019.1",
+    "unityRelease": "0b5",
+    "documentationUrl": "http://coocoogame.com/",
+    "changelogUrl": "http://coocoogame.com/",
+    "licensesUrl": "http://coocoogame.com/licensing.html",
+   "keywords": [
+      "webgl",
+      "ui",
+      "code genery"
+    ],
+    "author": {
+      "name": "coocoogame",
+      "email": "axuyin@gmail.com",
+      "url": "http://coocoogame.com/"
+    }
+  }

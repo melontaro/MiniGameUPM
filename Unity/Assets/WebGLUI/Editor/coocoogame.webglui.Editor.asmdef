@@ -1,0 +1,16 @@
+{
+    "name": "coocoogame.webglui.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:c3116ec61e873aa49bb695de1c4d1970"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
