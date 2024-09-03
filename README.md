@@ -21,3 +21,6 @@ https://github.com/melontaro/MiniGameUPM.git?path=Unity/Assets/MapDataExporter
 ``` C#
 https://github.com/melontaro/MiniGameUPM.git?path=Unity/Assets/SpriteScriptableObject
 ```
+## webGL
+``` C#
+https://github.com/melontaro/MiniGameUPM.git?path=Unity/Assets/WebGLUI
